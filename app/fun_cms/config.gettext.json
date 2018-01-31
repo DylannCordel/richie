@@ -1,0 +1,39 @@
+{
+  "js": {
+    "parsers": [
+      {
+        "expression": "gt.gettext",
+        "arguments": {
+          "text": 0
+        }
+      },
+      {
+        "expression": "ngettext",
+        "arguments": {
+          "text": 0,
+          "textPlural": 1,
+          "count": 2
+        }
+      },
+      {
+        "expression": "pgettext",
+        "arguments": {
+          "context": 0,
+          "text": 1
+        }
+      },
+      {
+        "expression": ",pgettext",
+        "arguments": {
+          "context": 0,
+          "text": 1,
+          "textPlural": 2,
+          "count": 3
+        }
+      }
+    ],
+    "glob": {
+      "pattern": "**/*.tsx"
+    }
+  }
+}
