@@ -262,12 +262,12 @@ class Base(DRFMixin, ElasticSearchMixin, Configuration):
             "limits": {"VideoPlayerPlugin": 1},
         },
         "courses/cms/course_detail.html course_syllabus": {  # all plugins allowed
-            "name": _("Course Syllabus")
+            "name": _("Course Syllabus"),
         },
         "courses/cms/organization_detail.html banner": {
             "name": _("Banner"),
-            "plugins": ["ImagePlugin"],
-            "limits": {"ImagePlugin": 1},
+            "plugins": ["PicturePlugin"],
+            "limits": {"PicturePlugin": 1},
         },
         "courses/cms/organization_detail.html description": {
             "name": _("Description"),
@@ -276,8 +276,8 @@ class Base(DRFMixin, ElasticSearchMixin, Configuration):
         },
         "person/cms/person_detail.html portrait": {
             "name": _("Portrait"),
-            "plugins": ["ImagePlugin"],
-            "limits": {"ImagePlugin": 1},
+            "plugins": ["PicturePlugin"],
+            "limits": {"PicturePlugin": 1},
         },
         "person/cms/person_detail.html resume": {"name": _("Resume")},
     }
